@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DSAlgoProject]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="getstarted(failed)">
+    <parameter name="browsername" value="chrome"/>
+    <classes>
+      <class name="com.DSAlgo.Testcases.LoginTestcase_Tc">
+        <methods>
+          <include name="Startbrowser"/>
+          <include name="SigninPage"/>
+        </methods>
+      </class> <!-- com.DSAlgo.Testcases.LoginTestcase_Tc -->
+    </classes>
+  </test> <!-- getstarted(failed) -->
+</suite> <!-- Failed suite [DSAlgoProject] -->
