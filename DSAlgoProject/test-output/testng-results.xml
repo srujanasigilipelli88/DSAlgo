@@ -1,68 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="4" total="7" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-18T17:50:05 EDT" name="DSAlgoProject" finished-at="2022-06-18T17:50:48 EDT" duration-ms="43137">
+  <suite started-at="2022-06-25T00:59:23 EDT" name="DSAlgoProject" finished-at="2022-06-25T00:59:29 EDT" duration-ms="5518">
     <groups>
     </groups>
-    <test started-at="2022-06-18T17:50:05 EDT" name="getstarted" finished-at="2022-06-18T17:50:48 EDT" duration-ms="43137">
+    <test started-at="2022-06-25T00:59:23 EDT" name="getstarted" finished-at="2022-06-25T00:59:29 EDT" duration-ms="5518">
       <class name="com.DSAlgo.Testcases.HomePageTest">
-        <test-method is-config="true" signature="Startbrowser(java.lang.String)[pri:0, instance:com.DSAlgo.Testcases.HomePageTest@557caf28]" started-at="2022-06-18T17:50:18 EDT" name="Startbrowser" finished-at="2022-06-18T17:50:24 EDT" duration-ms="6211" status="PASS">
+        <test-method signature="SignInTest()[pri:2, instance:com.DSAlgo.Testcases.HomePageTest@62ddbd7e]" started-at="2022-06-25T00:59:27 EDT" name="SignInTest" finished-at="2022-06-25T00:59:27 EDT" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInTest -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.DSAlgo.Testcases.HomePageTest@62ddbd7e]" started-at="2022-06-25T00:59:27 EDT" name="tearDownMethod" finished-at="2022-06-25T00:59:28 EDT" duration-ms="291" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[[TestResult name=SignInTest status=SUCCESS method=HomePageTest.SignInTest()[pri:2, instance:com.DSAlgo.Testcases.HomePageTest@62ddbd7e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Startbrowser -->
-        <test-method signature="Login()[pri:2, instance:com.DSAlgo.Testcases.HomePageTest@557caf28]" started-at="2022-06-18T17:50:24 EDT" name="Login" finished-at="2022-06-18T17:50:27 EDT" duration-ms="3022" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
+        </test-method> <!-- tearDownMethod -->
       </class> <!-- com.DSAlgo.Testcases.HomePageTest -->
       <class name="com.DSAlgo.Testcases.LoginTestcase_Tc">
-        <test-method is-config="true" signature="Startbrowser(java.lang.String)[pri:0, instance:com.DSAlgo.Testcases.LoginTestcase_Tc@408d971b]" started-at="2022-06-18T17:50:27 EDT" name="Startbrowser" finished-at="2022-06-18T17:50:33 EDT" duration-ms="5847" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Startbrowser -->
-        <test-method signature="SigninPage()[pri:3, instance:com.DSAlgo.Testcases.LoginTestcase_Tc@408d971b]" started-at="2022-06-18T17:50:33 EDT" name="SigninPage" finished-at="2022-06-18T17:50:48 EDT" duration-ms="15149" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="SigninPage()[pri:3, instance:com.DSAlgo.Testcases.LoginTestcase_Tc@74e52ef6]" started-at="2022-06-25T00:59:28 EDT" name="SigninPage" finished-at="2022-06-25T00:59:28 EDT" duration-ms="265" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Unable to find element with locator By.name: username
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
-System info: host: 'GWTN156-11', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: driver.version: RemoteWebDriver]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.name: username
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
-System info: host: 'GWTN156-11', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy21.sendKeys(Unknown Source)
-at com.DSAlgo.pageobjects.LoginPage.TypeUsername(LoginPage.java:38)
-at com.DSAlgo.Testcases.LoginTestcase_Tc.SigninPage(LoginTestcase_Tc.java:24)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null
+at com.DSAlgo.Testcases.LoginTestcase_Tc.SigninPage(LoginTestcase_Tc.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -89,13 +62,24 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SigninPage -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.DSAlgo.Testcases.LoginTestcase_Tc@74e52ef6]" started-at="2022-06-25T00:59:28 EDT" name="tearDownMethod" finished-at="2022-06-25T00:59:28 EDT" duration-ms="134" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SigninPage status=FAILURE method=LoginTestcase_Tc.SigninPage()[pri:3, instance:com.DSAlgo.Testcases.LoginTestcase_Tc@74e52ef6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
       </class> <!-- com.DSAlgo.Testcases.LoginTestcase_Tc -->
       <class name="com.DSAlgo.Testcases.GetStartedPageTest">
-        <test-method is-config="true" signature="Startbrowser(java.lang.String)[pri:0, instance:com.DSAlgo.Testcases.GetStartedPageTest@13c9d689]" started-at="2022-06-18T17:50:05 EDT" name="Startbrowser" finished-at="2022-06-18T17:50:13 EDT" duration-ms="8615" status="PASS">
+        <test-method is-config="true" signature="Startbrowser(java.lang.String)[pri:0, instance:com.DSAlgo.Testcases.GetStartedPageTest@1e800aaa]" started-at="2022-06-25T00:59:23 EDT" name="Startbrowser" finished-at="2022-06-25T00:59:26 EDT" duration-ms="3182" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -106,10 +90,25 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Startbrowser -->
-        <test-method signature="getstarted()[pri:1, instance:com.DSAlgo.Testcases.GetStartedPageTest@13c9d689]" started-at="2022-06-18T17:50:14 EDT" name="getstarted" finished-at="2022-06-18T17:50:18 EDT" duration-ms="4198" status="PASS">
+        <test-method signature="getstarted()[pri:1, instance:com.DSAlgo.Testcases.GetStartedPageTest@1e800aaa]" started-at="2022-06-25T00:59:26 EDT" name="getstarted" finished-at="2022-06-25T00:59:27 EDT" duration-ms="439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getstarted -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.DSAlgo.Testcases.GetStartedPageTest@1e800aaa]" started-at="2022-06-25T00:59:27 EDT" name="tearDownMethod" finished-at="2022-06-25T00:59:27 EDT" duration-ms="244" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getstarted status=SUCCESS method=GetStartedPageTest.getstarted()[pri:1, instance:com.DSAlgo.Testcases.GetStartedPageTest@1e800aaa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.DSAlgo.Testcases.GetStartedPageTest@1e800aaa]" started-at="2022-06-25T00:59:28 EDT" name="teardown" finished-at="2022-06-25T00:59:29 EDT" duration-ms="709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
       </class> <!-- com.DSAlgo.Testcases.GetStartedPageTest -->
     </test> <!-- getstarted -->
   </suite> <!-- DSAlgoProject -->

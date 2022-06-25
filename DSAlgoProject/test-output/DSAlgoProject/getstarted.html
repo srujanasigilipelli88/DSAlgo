@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jun 18 17:50:05 EDT 2022</td>
+<td>Started on:</td><td>Sat Jun 25 00:59:23 EDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>43 seconds (43137 ms)</td>
+<tr><td>Total time:</td><td>5 seconds (5518 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,40 +77,16 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.DSAlgo.Testcases.LoginTestcase_Tc.SigninPage()'><b>SigninPage</b><br>Test class: com.DSAlgo.Testcases.LoginTestcase_Tc</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.name: username
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
-System info: host: &apos;GWTN156-11&apos;, ip: &apos;192.168.1.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.sendKeys(Unknown Source)
-	at com.DSAlgo.pageobjects.LoginPage.TypeUsername(LoginPage.java:38)
-	at com.DSAlgo.Testcases.LoginTestcase_Tc.SigninPage(LoginTestcase_Tc.java:24)
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;this.driver&quot; is null
+	at com.DSAlgo.Testcases.LoginTestcase_Tc.SigninPage(LoginTestcase_Tc.java:28)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1332038894", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1332038894'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.name: username
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
-System info: host: &apos;GWTN156-11&apos;, ip: &apos;192.168.1.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.sendKeys(Unknown Source)
-	at com.DSAlgo.pageobjects.LoginPage.TypeUsername(LoginPage.java:38)
-	at com.DSAlgo.Testcases.LoginTestcase_Tc.SigninPage(LoginTestcase_Tc.java:24)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1202168065", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1202168065'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;this.driver&quot; is null
+	at com.DSAlgo.Testcases.LoginTestcase_Tc.SigninPage(LoginTestcase_Tc.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -136,8 +112,8 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>15</td>
-<td>com.DSAlgo.Testcases.LoginTestcase_Tc@408d971b</td></tr>
+<td>0</td>
+<td>com.DSAlgo.Testcases.LoginTestcase_Tc@74e52ef6</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -148,15 +124,15 @@ Driver info: driver.version: RemoteWebDriver
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.DSAlgo.Testcases.HomePageTest.Login()'><b>Login</b><br>Test class: com.DSAlgo.Testcases.HomePageTest</td>
-<td></td>
-<td>3</td>
-<td>com.DSAlgo.Testcases.HomePageTest@557caf28</td></tr>
-<tr>
 <td title='com.DSAlgo.Testcases.GetStartedPageTest.getstarted()'><b>getstarted</b><br>Test class: com.DSAlgo.Testcases.GetStartedPageTest</td>
 <td></td>
-<td>4</td>
-<td>com.DSAlgo.Testcases.GetStartedPageTest@13c9d689</td></tr>
+<td>0</td>
+<td>com.DSAlgo.Testcases.GetStartedPageTest@1e800aaa</td></tr>
+<tr>
+<td title='com.DSAlgo.Testcases.HomePageTest.SignInTest()'><b>SignInTest</b><br>Test class: com.DSAlgo.Testcases.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.DSAlgo.Testcases.HomePageTest@62ddbd7e</td></tr>
 </table><p>
 </body>
 </html>

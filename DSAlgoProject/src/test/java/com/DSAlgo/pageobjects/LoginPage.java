@@ -11,7 +11,7 @@ import com.DSAlgo.Testcases.BaseClass;
 public class LoginPage  extends BaseClass
 {
 
-	WebDriver driver;
+	public WebDriver driver;
 	
 	public LoginPage(WebDriver driver)
 	{

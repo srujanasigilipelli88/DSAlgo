@@ -6,25 +6,18 @@ import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 
 import com.DSAlgo.pageobjects.HomePage;
+import com.DSAlgo.utilities.Helper;
 
 public class HomePageTest extends BaseClass
 {
 
 	public WebDriver driver;
-	HomePage Hp;
 	
 	   
 	@Test   (priority = 2) 
-		public void Login() throws Exception
+		public void SignInTest()
 		{
-		HomePage HP = PageFactory.initElements(driver, HomePage.class);
-			//HomePage HP = new HomePage(driver);
-			System.out.println("home page click sign in");
-			HP.ClickSignin();
-			System.out.println("home page click sign in");
-			
-			//driver.manage().wait(5000);
-			//logger.info("welcome");
-
+         HomePage HP = new HomePage();
+         HP.ClickSignin();
 		}
 }

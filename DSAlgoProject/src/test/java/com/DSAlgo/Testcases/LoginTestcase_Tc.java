@@ -24,7 +24,7 @@ public class LoginTestcase_Tc extends BaseClass
     	 lp.TypeUsername(UserName);
     	 lp.TypePassword(Password);
     	 lp.ClickloginButton();
-    	 logger.info("log in test case");
+    	 //logger.info("log in test case");
     	 driver.manage().wait(5000);
     }
 }

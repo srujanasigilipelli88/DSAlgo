@@ -6,6 +6,8 @@
     <classes>
       <class name="com.DSAlgo.Testcases.LoginTestcase_Tc">
         <methods>
+          <include name="teardown"/>
+          <include name="tearDownMethod"/>
           <include name="Startbrowser"/>
           <include name="SigninPage"/>
         </methods>

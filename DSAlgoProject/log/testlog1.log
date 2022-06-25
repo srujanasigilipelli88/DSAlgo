@@ -1,0 +1,76 @@
+2022-06-24 14:15:40,665 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 102.0.5005.61 (resolved driver for Chrome 102)
+2022-06-24 14:15:40,680 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\chakr\.cache\selenium\chromedriver\win32\102.0.5005.61\chromedriver.exe
+2022-06-24 14:15:45,537 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 102.0.5005.61 (resolved driver for Chrome 102)
+2022-06-24 14:15:45,546 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\chakr\.cache\selenium\chromedriver\win32\102.0.5005.61\chromedriver.exe
+2022-06-24 14:16:09,793 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 102.0.5005.61 (resolved driver for Chrome 102)
+2022-06-24 14:16:09,810 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\chakr\.cache\selenium\chromedriver\win32\102.0.5005.61\chromedriver.exe
+2022-06-24 14:16:14,930 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 102.0.5005.61 (resolved driver for Chrome 102)
+2022-06-24 14:16:14,944 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\chakr\.cache\selenium\chromedriver\win32\102.0.5005.61\chromedriver.exe
+2022-06-24 14:16:17,637 [main] ERROR org.testng.reporters.jq.Main - C:\Users\chakr\git\DSAlgo\DSAlgoProject\test-output\jquery-3.6.0.min.js
+java.nio.file.FileAlreadyExistsException: C:\Users\chakr\git\DSAlgo\DSAlgoProject\test-output\jquery-3.6.0.min.js
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:87)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:224)
+	at java.base/java.nio.file.Files.copy(Files.java:3144)
+	at org.testng.reporters.jq.Main.generateReport(Main.java:93)
+	at org.testng.TestNG.generateReports(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1072)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2022-06-24 14:16:47,080 [main] ERROR org.testng.reporters.jq.Main - C:\Users\chakr\git\DSAlgo\DSAlgoProject\test-output\jquery-3.6.0.min.js
+java.nio.file.FileAlreadyExistsException: C:\Users\chakr\git\DSAlgo\DSAlgoProject\test-output\jquery-3.6.0.min.js
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:87)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:224)
+	at java.base/java.nio.file.Files.copy(Files.java:3144)
+	at org.testng.reporters.jq.Main.generateReport(Main.java:93)
+	at org.testng.TestNG.generateReports(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1072)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2022-06-24 14:19:42,673 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 102.0.5005.61 (resolved driver for Chrome 102)
+2022-06-24 14:19:42,688 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\chakr\.cache\selenium\chromedriver\win32\102.0.5005.61\chromedriver.exe
+2022-06-24 14:19:44,680 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 102.0.5005.61 (resolved driver for Chrome 102)
+2022-06-24 14:19:44,702 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\chakr\.cache\selenium\chromedriver\win32\102.0.5005.61\chromedriver.exe
+2022-06-24 14:20:17,328 [main] ERROR org.testng.reporters.jq.Main - C:\Users\chakr\git\DSAlgo\DSAlgoProject\test-output\jquery-3.6.0.min.js
+java.nio.file.FileAlreadyExistsException: C:\Users\chakr\git\DSAlgo\DSAlgoProject\test-output\jquery-3.6.0.min.js
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:87)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:224)
+	at java.base/java.nio.file.Files.copy(Files.java:3144)
+	at org.testng.reporters.jq.Main.generateReport(Main.java:93)
+	at org.testng.TestNG.generateReports(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1072)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2022-06-24 14:22:47,939 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 102.0.5005.61 (resolved driver for Chrome 102)
+2022-06-24 14:22:47,966 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\chakr\.cache\selenium\chromedriver\win32\102.0.5005.61\chromedriver.exe
+2022-06-24 14:22:49,925 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 102.0.5005.61 (resolved driver for Chrome 102)
+2022-06-24 14:22:49,944 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\chakr\.cache\selenium\chromedriver\win32\102.0.5005.61\chromedriver.exe
+2022-06-24 14:23:22,343 [main] ERROR org.testng.reporters.jq.Main - C:\Users\chakr\git\DSAlgo\DSAlgoProject\test-output\jquery-3.6.0.min.js
+java.nio.file.FileAlreadyExistsException: C:\Users\chakr\git\DSAlgo\DSAlgoProject\test-output\jquery-3.6.0.min.js
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:87)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:224)
+	at java.base/java.nio.file.Files.copy(Files.java:3144)
+	at org.testng.reporters.jq.Main.generateReport(Main.java:93)
+	at org.testng.TestNG.generateReports(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1072)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)

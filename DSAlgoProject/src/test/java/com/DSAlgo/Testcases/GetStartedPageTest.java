@@ -21,20 +21,20 @@ public class GetStartedPageTest extends BaseClass
 	  GetStartedPage gspage =new GetStartedPage(driver);
 	 
 	  gspage.ClickGetStartedButton( driver);
-	  logger.info("welcome");
-	  Thread.sleep(3000);
-	  logger.info("nextpage");
+	 // logger.info("welcome");
+	 // Thread.sleep(3000);
+	 // logger.info("nextpage");
 	
 	//driver.navigate().to(null);
 	if(driver.getTitle().equalsIgnoreCase("NumpyNinja"))
 	{
 		Assert.assertTrue(true);
-		logger.info("test passed");
+		//logger.info("test passed");
 	}
 	else 
 	{
 		Assert.assertTrue(false);
-		logger.info("test failed");
+		//logger.info("test failed");
 	}
 	}
 	

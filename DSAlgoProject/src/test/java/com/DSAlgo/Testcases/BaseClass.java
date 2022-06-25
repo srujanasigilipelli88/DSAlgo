@@ -8,11 +8,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
+import com.DSAlgo.utilities.Helper;
 import com.DSAlgo.utilities.ReadConfig;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -22,34 +30,30 @@ public class BaseClass
 	public String baseURL = readconfig.GetApplicationURL();
 	public String UserName = readconfig.GetUserName();
 	public String Password = readconfig.GetPassword();
-	
 	public static WebDriver driver;
-	 public static Logger logger;
+	
+	
+	
+	
 	
 	@Parameters("browsername")
-	@BeforeClass
-	
-	
+	@BeforeTest
 		 public  void Startbrowser(String browser) throws Exception
 	     {
 	    	if(browser.equals("chrome"))
 	    	{
 	    		WebDriverManager.chromedriver().setup();
-	    		//System.setProperty("webdriver.chrome.driver", readconfig.Getchromepath() );
 	    		  driver = new ChromeDriver();
-	    		 //driver.get(baseURL);
 	    		    
 	    	}
 	    	else if(browser.equals("edgedriver"))
 	    	{
 	    		WebDriverManager.edgedriver().setup(); 
-	    	//System.setProperty("webdriver.edge.driver", readconfig.GetFirefoxpath());
 	    		driver = new EdgeDriver();
 	    	}
 	    	else if(browser.equals("firefox"))
 	    	{
 	    		WebDriverManager.firefoxdriver().setup();  
-	    	// System.setProperty("webdriver.gecko.driver", readconfig.GetEdgeDriver());
 	    		driver = new FirefoxDriver();
 	    	}
 	    	else 
@@ -59,23 +63,29 @@ public class BaseClass
 	    	}
 
 	    	driver.get(baseURL);
-	    	
-	    	
-	    	logger = logger.getLogger("");
-	    	PropertyConfigurator.configure("Log4j.Properties");
-
-	    	driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	        driver.manage().window().maximize();
-	        //driver.get(url);
-	        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	         //return driver;
+            driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+   	
 	     }
-}
+
 
 	     
-	/*@AfterClass
+	@AfterTest
 	public void teardown()
 	{
 		driver.quit();
 	}
-}*/
+	
+	@AfterMethod
+	public void tearDownMethod(ITestResult result)
+	{
+		if(result.getStatus()==ITestResult.FAILURE);
+		
+		{
+			Helper.captureScreenShot(driver);
+			
+		}
+	}
+	
+	
+}
