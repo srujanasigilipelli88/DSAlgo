@@ -12,8 +12,9 @@
                        <!-- packagename.Testcase class name  -->
                              <class name ="com.DSAlgo.Testcases.GetStartedPageTest" />
                              <class name ="com.DSAlgo.Testcases.HomePageTest" />
-                              <class name ="com.DSAlgo.Testcases.LoginTestcase_Tc" /> 
-                               
+                             <class name ="com.DSAlgo.Testcases.LoginTestcase_Tc" />  
+                             <class name ="com.DSAlgo.Testcases.QueueTest" />
+                             <class name ="com.DSAlgo.Testcases.TreeTest" />
 
                      </classes>
              </test>

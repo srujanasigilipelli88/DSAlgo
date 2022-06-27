@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.DSAlgo.Testcases.HomePageTest">
+      <class name="com.DSAlgo.Testcases.QueueTest">
         <methods>
-          <include name="Login"/>
+          <include name="tearDownMethod"/>
+          <include name="Startbrowser"/>
+          <include name="ClickQueueTest"/>
         </methods>
-      </class> <!-- com.DSAlgo.Testcases.HomePageTest -->
+      </class> <!-- com.DSAlgo.Testcases.QueueTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

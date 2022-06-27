@@ -76,7 +76,7 @@ public class BaseClass
 		driver.quit();
 	}
 	
-	@AfterMethod
+	/*@AfterMethod
 	public void tearDownMethod(ITestResult result)
 	{
 		if(result.getStatus()==ITestResult.FAILURE);
@@ -85,7 +85,7 @@ public class BaseClass
 			Helper.captureScreenShot(driver);
 			
 		}
-	}
+	}*/
 	
 	
 }

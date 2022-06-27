@@ -4,14 +4,13 @@
   <test thread-count="5" name="getstarted(failed)">
     <parameter name="browsername" value="chrome"/>
     <classes>
-      <class name="com.DSAlgo.Testcases.LoginTestcase_Tc">
+      <class name="com.DSAlgo.Testcases.QueueTest">
         <methods>
-          <include name="teardown"/>
           <include name="tearDownMethod"/>
           <include name="Startbrowser"/>
-          <include name="SigninPage"/>
+          <include name="ClickQueueTest"/>
         </methods>
-      </class> <!-- com.DSAlgo.Testcases.LoginTestcase_Tc -->
+      </class> <!-- com.DSAlgo.Testcases.QueueTest -->
     </classes>
   </test> <!-- getstarted(failed) -->
 </suite> <!-- Failed suite [DSAlgoProject] -->

@@ -12,6 +12,7 @@ public class LoginPage  extends BaseClass
 {
 
 	public WebDriver driver;
+	public HomePage hp;
 	
 	public LoginPage(WebDriver driver)
 	{
@@ -28,8 +29,8 @@ public class LoginPage  extends BaseClass
 	@CacheLookup
 	WebElement Password;
 	
-	@FindBy(xpath="//*[@id=\"navbarCollapse\"]/div[2]/ul/a[3]")
-	@CacheLookup
+	@FindBy(xpath="//input[@value='Login']")
+	
 	WebElement XPath;
 	
 	
@@ -45,13 +46,13 @@ public class LoginPage  extends BaseClass
 	}
 	
 	
-	public  void ClickloginButton()
+	public  HomePage ClickloginButton()
 	{
 		XPath.click();
 		//HomePage.Hp = new HomePage();
 		
-		
-		//return HP;
+		hp = new HomePage();
+		return hp;
 	}
 }
 

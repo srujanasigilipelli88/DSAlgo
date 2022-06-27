@@ -13,55 +13,43 @@ import org.apache.poi.xssf.usermodel.*;
 
 public class ExcelDataProvider 
 {
-	public static FileInputStream fi;
-	public static FileOutputStream fo;
-	public static XSSFWorkbook wb;
-	public static XSSFSheet ws;
-	public static XSSFRow row;
-	public static XSSFCell cell;
-	
-	 public static int getRowCount(String xlfile,String xlsheet)   
-	 {
- 
-		 fi = new FileInputStream(xlfile);
-		 wb = new XSSFWorkbook(fi);
-		 ws = wb.getSheet(xlsheet);
-		 int rowcount = ws.getLastRowNum();
-		 wb.close();
-		 fi.close();
-		 return rowcount;
-		 
-		 
-	 }
-		
-		public int getcellCount(String xlfile,String xlsheet,int cellnum)
-		{
-			 fi = new FileInputStream(xlfile);
-			 wb = new XSSFWorkbook(fi);
-			 ws = wb.getSheet(xlsheet);
-			 int cellcount = row.getLastCellNum();
-			 wb.close();
-			 fi.close();
-			 return cellcount;
-		}
-		
-		
-		public String getcellData(String xlfile,String xlsheet,int rownum, int cellnum) throws IOException
-		{
-			 fi = new FileInputStream(xlfile);
-			 wb = new XSSFWorkbook(fi);
-			 ws = wb.getSheet(xlsheet);
-			 row = ws.getRow(rownum);
-			 cell = row.getCell(cellnum);
-			 String data;
-			 
-			 DataFormatter formatter = new DataFormatter();
-			 String cellData = formatter.formatCellValue(cell);
-			 return cellData;
-		}
-			 wb.close();
-			 fi.close();
-		
-	 }
-	 
 
+	
+	@Test
+	public static Object[][] readExcelData(String filePath, String sheetName) throws Exception
+	{
+		System.out.println(filePath);
+		XSSFWorkbook wb=null;
+		XSSFSheet sheet=null;
+		FileInputStream fis=null;
+		Object data[][]=null;
+		try {
+			fis = new FileInputStream(filePath);
+			wb = new XSSFWorkbook(fis);
+			sheet = wb.getSheet(sheetName);
+			int rowCount = sheet.getLastRowNum();
+			XSSFRow row = sheet.getRow(0);
+			int colCount = row.getLastCellNum();
+			
+			data = new Object[rowCount][colCount];
+			for (int i = 0; i < rowCount; i++) {
+				row = sheet.getRow(i + 1);
+				for (int j = 0; j < colCount; j++) {
+					data[i][j] = row.getCell(j).toString();
+					System.out.println(row.getCell(j));
+				}
+			} 
+		} 
+		catch(Exception ex) 
+		{
+			ex.printStackTrace();
+			
+		}finally {
+			wb.close();
+			fis.close();
+		}
+		return data;
+	}	
+}
+	
+	
