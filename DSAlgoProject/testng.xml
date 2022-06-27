@@ -4,6 +4,8 @@
 
 <suite name="DSAlgoProject"> 
 
+<listeners>
+<listener class-name="extentReports.ExtentReportsListener"/> </listeners>
 
 
              <test name="getstarted" allow-return-values="true">
